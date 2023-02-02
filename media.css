@@ -1,0 +1,177 @@
+@import "styles.css";
+
+@media screen and (min-width: 350px) and (max-width: 550px) {
+    
+    .contenedor-1 .enlaces > a, ul{
+        display: none;
+    }
+        .contenedor-1 .enlaces .menu_icon{
+            margin-top: 20px;
+        }
+            .contenedor-1 .enlaces .menu_icon a img{
+                display: block;
+        }
+        .contenedor-1 .banner{
+            margin: 0;
+        }
+        .contenedor-1 .banner p{
+            font-size: 15px;
+        }
+    .contenedor-2{
+        height: 100vh;
+    }
+        .contenedor-2 .texto-cont2{
+            padding: 0;
+            width: 90%;
+            max-height: 100%;
+        }
+            .contenedor-2 .texto-cont2 .barra{
+                padding-right: 0;
+                max-width: 400px;
+                margin-bottom: 20px;
+            }
+            .contenedor-2 .texto-cont2 .imagen-cont2{
+                display: flex;
+                max-height: 100%;
+                max-width: 80%;
+            }
+            .contenedor-2 .texto-cont2 p{
+                font-size: 15px;
+                margin-top: 20px;
+                text-align: center;
+            }
+        .contenedor-2 .imagen-cont2{
+            display: none;
+            margin: 30px;
+            width: 500px;
+            max-height: 300px;
+        }
+        .contenedor-2 .imagen-cont2 img{
+            width: 100%;
+        }
+    .contenedor-3{
+        height: 80vh;
+
+    }
+        .contenedor-3 .texto-cont3{
+            width: 90%;
+        }
+            .contenedor-3 .texto-cont3 p{
+                font-size: 15px;
+            }
+    .contenedor-4 {
+        height: 100vh;
+    }
+        .contenedor-4 .texto-cont4{
+            padding: 0px;
+            width: 90%;
+        }
+            .contenedor-4 .texto-cont4 .imagen-cont4{
+                display: grid;
+                width: 100%;
+                height: 30%;
+                margin: 30px;
+                height: 40%;
+
+            }
+            .contenedor-4 .texto-cont4 p{
+                font-size: 15px;
+                text-align: center;
+            }
+        .contenedor-4 .imagen-cont4{
+            display: none;
+        }
+    .contenedor-5{
+        height: 80vh;
+    }
+        .contenedor-5 .texto-cont5{
+            width: 90%;
+        }
+            .contenedor-5 .texto-cont5 p{
+                font-size: 15px;
+            }
+    .contenedor-6{
+        height: 100vh;
+    }
+        .contenedor-6 .imagen-cont6{
+            display: none;
+        }
+        .contenedor-6 .texto-cont6{
+            padding: 0;
+            width: 100%;
+        }
+            .contenedor-6 .texto-cont6 p{
+                width: 80%;
+                text-align: center;
+                font-size: 15px;
+            }
+            .contenedor-6 .texto-cont6 .imagen-cont6{
+                display: flex;
+                padding: 0;
+                height: 40%;
+                width: 80%;
+            }
+    .contenedor-7{
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 20px;
+    }
+        .contenedor-7 .mapa{
+            justify-content: flex-start;
+            width: 100%;
+            max-height: 30%;
+        }
+            .contenedor-7 .mapa iframe{
+                max-height: 60%;
+                padding-top: 10px;
+            }
+        .contenedor-7 .formulario{
+            width: 100%;
+            max-height: 70%;
+            justify-content: flex-start;
+        }
+            .contenedor-7 .formulario form{
+                width: 90%;
+                gap: 5px 15px;
+                height: 400px;
+            }
+                .contenedor-7 .formulario form .nombre, .apellido, .direccion, .correo, textarea{
+                    height: 60%;
+                    width: 100%;
+                }
+                .contenedor-7 .formulario form input[type=submit]{
+                    width: 40%;
+                    height: 80%;
+                    padding: 5px;
+                }
+    footer{
+        height: 80vh;
+    }
+        footer .nosotros{
+            padding: 0 20px;
+            width: 100%;
+            height: 40%;
+        }
+            footer .nosotros p{
+                font-size: 15px;
+            }
+        footer .linea{
+            padding: 0 50px;
+        }
+        footer .footer-2{
+            flex-direction: column;
+            height: 60%;
+        }
+            footer .footer-2 .siguenos{
+                width: 100%;
+            }
+                footer .footer-2 .siguenos .iconos-footer{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            footer .footer-2 .noticias{
+                width: 100%;
+                height: 100%;
+            }
+}

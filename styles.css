@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+html,body{
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scrollbar-color: antiquewhite black;
+    scrollbar-width: thin;
+    font-family: 'Poppins', Calibri;
+}
+
+body {
+    background-color: antiquewhite;
+}
+/* --- CONTENEDOR 1 (NAV Y BANNER) --- */
+
+.contenedor-1{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+}
+    nav {
+        background: linear-gradient( rgb(34, 34, 34), transparent);
+        width: 100%;
+        height: 10%;
+        display: flex;
+        position: fixed;
+        z-index: 999;
+    }
+        .logo {
+            width: 30%;
+            display: flex;
+            justify-content: start;
+            padding-left: 50px;
+            align-items: center;
+        }
+            .logo a{
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 25px;
+                transition: all 250ms;
+            }
+        .enlaces{
+            width: 70%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 50px;
+        }
+            .enlaces a{
+                padding: 0px 20px;
+                text-decoration: none;
+                color: white;
+                transition: all 250ms;
+            }
+                .enlaces .dropdown{
+                    list-style-type: none;
+                }
+                    .dropdown-content{
+                        position: absolute;
+                        margin: 5px 0px;
+                        width: 100%;
+                        display: none;
+                        transition: all 250ms;
+                        width: 100px;
+                        background-color: antiquewhite;
+                    }
+                        .dropdown-content .menu-dropdown{
+                            display: block;
+                            padding: 20px;
+                            color: black;
+                        }
+                    .enlaces .menu_icon a img {
+                        display: none;
+                        height: 50px;
+                        border-radius: 10px;
+                        padding: 8px;
+                        background-color: antiquewhite;
+                        transition: all 250ms;
+                    }
+    .contenedor-1 .banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        margin: 0 500px;
+        color: white;
+    }
+        .contenedor-1 .banner h1{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .contenedor-1 .banner p{
+            padding: 20px;
+            font-size: 20px;
+        }
+        .contenedor-1 .banner a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(0, 124, 12);
+            padding: 15px 30px;
+            border-radius: 50px;
+            transition: all 150ms;
+        }
+.contenedor-1::before{
+    content: '';
+    background-image: url("/Web/Restaurant-page/media/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.logo a:hover{
+    transform: scale(1.2);
+}
+.enlaces > a:hover{
+    transform: scale(1.1);
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: fit-content;
+}
+.enlaces .menu_icon a img:hover{
+    transform: scale(1.1);
+}
+.contenedor-1 .banner a:hover{
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.menu-dropdown:hover{
+    transform: scale(1.1);
+}
+
+/* --- CONTENEDOR 2 (IMAGEN Y TEXTO) --- */
+
+.contenedor-2{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .contenedor-2 .imagen-cont2{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .contenedor-2 .imagen-cont2 img{
+            width: 70%;
+            border-radius: 5px;
+            transition: all 250ms;
+        }
+    .contenedor-2 .texto-cont2{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: black;
+        padding-right: 50px;
+    }
+        .contenedor-2 .texto-cont2 .imagen-cont2{
+            display: none;
+        }
+        .contenedor-2 .texto-cont2 h2{
+            font-size: 35px;
+        }
+        .contenedor-2 .texto-cont2 .barra{
+            background-color: rgb(0, 124, 12);
+            padding: 3px;
+            border-radius: 50px;
+            width: 70%;
+            margin: 20px 0px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenedor-2 .texto-cont2 .barra .circulo{
+            background-color: rgb(0, 124, 12);
+            border: thick solid white;
+            border-radius: 50px;
+            padding: 12px;
+            position: absolute;
+        }
+        .contenedor-2 .texto-cont2 p{
+            font-size: 20px;
+        }
+        .contenedor-2 .texto-cont2 a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(0, 124, 12);
+            padding: 15px 30px;
+            border-radius: 50px;
+            transition: all 150ms;
+            margin: 20px;
+        }
+.contenedor-2 .texto-cont2 a:hover{
+    transform: scale(1.1);
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+}
+.contenedor-2 .imagen-cont2 img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px black;
+}
+
+/* --- CONTENEDOR 3 (PLATILLOS) --- */
+
+.contenedor-3{
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+    .contenedor-3::before{
+        content: '';
+        background-image: url('/Web/Restaurant-page/media/img3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .contenedor-3 .texto-cont3{ 
+        width: 30%;
+        text-align: center;
+    }
+        .contenedor-3 .texto-cont3 h2{
+            font-size: 35px;
+        }
+        .contenedor-3 .texto-cont3 p{
+            font-size: 20px;
+            padding: 10px;
+        }
+
+/* --- CONTENEDOR 4 (MENU) --- */
+
+.contenedor-4{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .contenedor-4 .texto-cont4{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+        .contenedor-4 .texto-cont4 h2{
+            font-size: 35px;
+        }
+        .contenedor-4 .texto-cont4 .barra{
+            background-color: rgb(0, 124, 12);
+            padding: 3px;
+            border-radius: 50px;
+            width: 70%;
+            margin: 20px 0px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenedor-4 .texto-cont4 .barra .circulo{
+            background-color: rgb(0, 124, 12);
+            border: thick solid white;
+            border-radius: 50px;
+            padding: 12px;
+            position: absolute;
+        }
+        .contenedor-4 .texto-cont4 .imagen-cont4{
+            display: none;
+        }
+        .contenedor-4 .texto-cont4 p{
+            font-size: 20px;
+        }
+        .contenedor-4 .texto-cont4 a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(0, 124, 12);
+            padding: 15px 30px;
+            border-radius: 50px;
+            transition: all 150ms;
+            margin: 20px;
+        }
+    .contenedor-4 .imagen-cont4{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 40% 40%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+        .contenedor-4 .imagen-cont4 img{
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            transition: all 250ms;
+            border-radius: 5px;
+        }
+.contenedor-4 .texto-cont4 a:hover{
+    transform: scale(1.1);
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+}
+.contenedor-4 .imagen-cont4 img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px black;
+}
+
+/* --- CONTENEDOR 5 (PLATILLOS 2) --- */
+
+.contenedor-5{
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+    .contenedor-5::before{
+        content: '';
+        background-image: url("/Web/Restaurant-page/media/img5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .contenedor-5 .texto-cont5{
+        text-align: center;
+        width: 30%;
+    }
+        .contenedor-5 .texto-cont5 h2{
+            font-size: 35px;
+        }
+        .contenedor-5 .texto-cont5 p{
+            font-size: 20px;
+            padding: 10px;
+        }
+
+/* --- CONTENEDOR 4 (MENUS) --- */
+
+.contenedor-6{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+    .contenedor-6 .imagen-cont6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contenedor-6 .imagen-cont6 > img{
+            margin: 20px;
+            height: 75%;
+            width: 45%;
+            object-fit: cover;
+            transition: all 250ms;
+            border-radius: 5px;
+        }
+    .contenedor-6 .texto-cont6{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 50px;
+    }
+        .contenedor-6 .texto-cont6 h2{
+            font-size: 35px;
+        }
+            .contenedor-6 .texto-cont6 .barra{
+                background-color: rgb(0, 124, 12);
+                padding: 3px;
+                border-radius: 50px;
+                width: 70%;
+                margin: 20px 0px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .contenedor-6 .texto-cont6 .barra .circulo{
+                    background-color: rgb(0, 124, 12);
+                    border: thick solid white;
+                    border-radius: 50px;
+                    padding: 12px;
+                    position: absolute;
+            }
+        .contenedor-6 .texto-cont6 .imagen-cont6{
+            display: none;
+        }
+        .contenedor-6 .texto-cont6 p{
+            font-size: 20px;
+        }
+        .contenedor-6 .texto-cont6 a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(0, 124, 12);
+            padding: 15px 30px;
+            border-radius: 50px;
+            transition: all 150ms;
+            margin: 20px;
+        }
+.contenedor-6 .texto-cont6 a:hover{
+    transform: scale(1.1);
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+}
+.contenedor-6 .imagen-cont6 img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px black;
+}
+
+/* --- CONTENEDOR 7 (MAPA Y FORMULARIO) --- */
+
+.contenedor-7{
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .contenedor-7 .mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+    }
+    .contenedor-7 .mapa h2{
+        padding: 20px;
+        color: white;
+        font-size: 35px;
+    }
+    .contenedor-7 .mapa iframe{
+        width: 80%;
+        transition: all 250ms;
+    }
+    .contenedor-7 .formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+    }
+        .contenedor-7 .formulario h2{
+            padding: 20px;
+            color: white;
+            font-size: 35px;
+        }
+        .contenedor-7 .formulario form{
+            margin: 20px 0px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: auto auto;
+            height: 60%;
+            width: 80%;
+        }
+        .contenedor-7 .formulario form .nombre{
+            padding: 10px;
+            border-radius: 50px;
+            border: rgb(0, 124, 12) solid;
+            outline: none;
+            transition: all 250ms;
+        }
+        .contenedor-7 .formulario form .apellido{
+            padding: 10px;
+            border-radius: 50px;
+            border: rgb(0, 124, 12) solid;
+            outline: none;
+            transition: all 250ms;
+        }
+        .contenedor-7 .formulario form .direccion{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding: 10px;
+            border-radius: 50px;
+            border:  rgb(0, 124, 12) solid;
+            outline: none;
+            transition: all 250ms;
+        }
+        .contenedor-7 .formulario form .correo{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding: 10px;
+            border-radius: 50px;
+            border: rgb(0, 124, 12) solid;
+            outline: none;
+            transition: all 250ms;
+        }
+        .contenedor-7 .formulario form textarea{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding: 10px;
+            border-radius: 20px;
+            border: rgb(0, 124, 12) solid;
+            outline: none;
+            transition: all 250ms;
+        }
+        .contenedor-7 .formulario form input[type=submit]{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border-radius: 50px;
+            border: none;
+            color: white;
+            background-color: rgb(0, 124, 12);
+            justify-self: center;
+            width: 50%;
+            padding: 10px 0px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 250ms;
+        }
+.contenedor-7 .formulario form .nombre:hover{
+    transform: scale(1.05);
+}
+.contenedor-7 .formulario form .apellido:hover{
+    transform: scale(1.05);
+}
+.contenedor-7 .formulario form .direccion:hover{
+    transform: scale(1.05);
+}
+.contenedor-7 .formulario form .correo:hover{
+    transform: scale(1.05);
+}
+.contenedor-7 .formulario form textarea:hover{
+    transform: scale(1.05);
+}
+.contenedor-7 .formulario form input[type=submit]:hover{
+    transform: scale(1.05);
+    background-color: rgb(0, 83, 8);
+}
+.contenedor-7 .mapa iframe:hover{
+    transform: scale(1.05);
+}
+
+/* --- (FOOTER) --- */
+
+footer{
+    height: 40vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    footer .linea{
+        width: 100%;
+        padding:0px 200px;
+    }
+        footer .linea .barra{
+            background-color: rgb(0, 124, 12);
+            padding: 3px;
+            border-radius: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+            footer .linea .barra .circulo{
+                background-color: rgb(0, 124, 12);
+                border: thick solid black;
+                border-radius: 50px;
+                padding: 12px;
+                position: absolute;
+            }
+    footer .nosotros{
+        height: 50%;
+        text-align: center;
+        width: 100%;
+        padding: 0px 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+        footer .nosotros h3{
+            color: white;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        footer .nosotros p{
+            color: white;
+            font-size: 20px;
+        }
+    footer .footer-2{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        footer .footer-2 .siguenos{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-size: 25px;
+        }
+            footer .footer-2 .siguenos .iconos-footer{
+                padding: 10px;
+            }
+                footer .footer-2 .siguenos .iconos-footer img{
+                    padding: 5px;
+                    transition: all 250ms;
+                    cursor: pointer;
+                }
+        footer .footer-2 .noticias{
+            color: white;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+            footer .footer-2 .noticias h3{
+                padding-bottom: 20px;
+                font-size: 25px;
+            }
+            footer .footer-2 .noticias input{
+                padding: 10px;
+                width: 50%;
+                border: rgb(0, 124, 12) solid;
+                border-radius: 50px;
+                transition: all 250ms;
+            }
+footer .footer-2 .siguenos .iconos-footer img:hover{
+    transform: scale(1.1);
+}
+footer .footer-2 .noticias input:hover{
+    transform: scale(1.1);
+}      
