@@ -116,7 +116,7 @@ body {
         }
 .contenedor-1::before{
     content: '';
-    background-image: url("/Web/Restaurant-page/media/background.jpg");
+    background-image: url("/media/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -243,7 +243,7 @@ body {
 }
     .contenedor-3::before{
         content: '';
-        background-image: url('/Web/Restaurant-page/media/img3.jpg');
+        background-image: url('/media/img3.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -358,7 +358,7 @@ body {
 }
     .contenedor-5::before{
         content: '';
-        background-image: url("/Web/Restaurant-page/media/img5.jpg");
+        background-image: url("/media/img5.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
