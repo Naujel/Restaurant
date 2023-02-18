@@ -80,13 +80,16 @@ body {
                             padding: 20px;
                             color: black;
                         }
-                    .enlaces .menu_icon a img {
+                    .enlaces .hamburger {
                         display: none;
-                        height: 50px;
+                        margin: 0;
+                        height: 55px;
+                        width: 60px;
                         border-radius: 10px;
                         padding: 8px;
                         background-color: antiquewhite;
                         transition: all 250ms;
+                        z-index: 999;
                     }
     .contenedor-1 .banner{
         display: flex;
@@ -114,6 +117,34 @@ body {
             border-radius: 50px;
             transition: all 150ms;
         }
+        .contenedor-1 .panel{
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 50%;
+            z-index: 998;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+            .contenedor-1 .panel .menu{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+                .contenedor-1 .panel .menu a{
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: rgb(250, 235, 215);
+                    font-size: 20px;
+                    transition: all 250ms;
+                    padding: 20px;
+                }
 .contenedor-1::before{
     content: '';
     background-image: url("/media/background.jpg");
@@ -138,9 +169,6 @@ body {
     border-bottom-width: 2px;
     width: fit-content;
 }
-.enlaces .menu_icon a img:hover{
-    transform: scale(1.1);
-}
 .contenedor-1 .banner a:hover{
     background-color: rgb(0, 0, 0);
     transform: scale(1.1);
@@ -148,6 +176,11 @@ body {
 }
 .dropdown:hover .dropdown-content{
     display: block;
+}
+.contenedor-1 .panel .menu a:hover{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
 }
 .menu-dropdown:hover{
     transform: scale(1.1);
