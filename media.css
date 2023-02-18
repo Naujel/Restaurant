@@ -5,11 +5,12 @@
     .contenedor-1 .enlaces > a, ul{
         display: none;
     }
-        .contenedor-1 .enlaces .menu_icon{
-            margin-top: 20px;
+        nav{
+            background: none;
+            margin-top: 10px;
         }
-            .contenedor-1 .enlaces .menu_icon a img{
-                display: block;
+        .contenedor-1 .enlaces .hamburger{
+            display: block;
         }
         .contenedor-1 .banner{
             margin: 0;
@@ -17,6 +18,14 @@
         .contenedor-1 .banner p{
             font-size: 15px;
         }
+        .contenedor-1 .panel{
+            display: block;
+            transform: translate(0, -100%);
+            transition: transform 0.5s ease;
+        }
+            .contenedor-1 .panel.is-active{
+                transform: translate(0,0);
+            }
     .contenedor-2{
         height: 100vh;
     }
