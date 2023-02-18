@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="media.css">
     <title>Restaurante</title>
@@ -30,9 +31,11 @@
                     <a href="#noticias">NOTICIAS</a>
                     <a href="#tienda">TIENDA</a>
                     <a href="https://naujel.github.io/index.html#contacto">CONTACTO</a>
-                    <div class="menu_icon">
-                        <a href="#menu_icon"><img src="/media/menu_icon.png" alt="Menu_icon"></a>
-                    </div>
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>    
             </nav>
             <div class="banner">
@@ -40,6 +43,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus debitis recusandae repellendus, beatae autem odit, perferendis quia nemo aut nostrum nesciunt eveniet voluptate. Suscipit sed unde cum, nisi magnam expedita!</p>
                 <a href="#explora">EXPLORA</a>
             </div>
+            <aside class="panel">
+                <div class="menu">
+                    <a href="#reservas">RESERVAS</a>
+                    <a href="#noticias">NOTICIAS</a>
+                    <a href="#tienda">TIENDA</a>
+                    <a href="index.html#contacto">CONTACTO</a>
+                </div>
+            </aside>
         </section>
         <section class="contenedor-2">
             <div class="imagen-cont2">
@@ -157,5 +168,6 @@
             </div>
         </footer>
     </main>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
